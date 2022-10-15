@@ -1,0 +1,62 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="panel">
+                <h3>HOME</h3>
+                <div class="scoreBox" id="homeScoreBox">
+                    <div class="scoreText" id="homeScore"></div>
+                </div>
+                <div class="addPoints">
+                    <button id="addOneHome" onclick="add1Home()">+1</button>
+                    <button id="addTwoHome" onclick="add2Home()">+2</button>
+                    <button id="addThreeHome" onclick="add3Home()">+3</button>
+                </div>
+                <p>Team Fouls</p>
+                <div class="foulBox">
+                    <div class="foulText" id="homeFouls"></div>
+                </div>
+                <button class="foulBtn" id="addHomeFoul" onclick="addHomeFoul()">Add Foul</button>
+            </div>
+            <div class="panel">
+                <div class="timerBox">
+                    <div id="timerText">15:00</div>                   
+                </div>
+                <div class="periodBox">
+                    <div id="periodText"></div>
+                </div>
+                <p>period</p>
+                <div class="periodBtns">
+                    <button onclick="setPeriod1()">1</button>
+                    <button onclick="setPeriod2()">2</button>
+                    <button onclick="setPeriod3()">3</button>
+                    <button onclick="setPeriod4()">4</button>
+                </div>
+                <div class="footer" id="footer">
+                    <button class="footerBtn" id="clearScoreBtn" onclick="clearScore()">Clear Score</button>
+                    <button class="footerBtn" id="startTimerBtn" onclick="timer()">Start Timer</button>
+                    <button class="footerBtn" id="stopTimerBtn" onclick="stopTimer()">Stop Timer</button>
+                </div>
+            </div>
+            <div class="panel">
+                <h3>GUEST</h3>
+                <div class="scoreBox" id="guestScoreBox">
+                    <div class="scoreText" id="guestScore"></div>
+                </div>
+                <div class="addPoints">
+                    <button id="addOneGuest" onclick="add1Guest()">+1</button>
+                    <button id="addTwoGuest" onclick="add2Guest()">+2</button>
+                    <button id="addThreeGuest" onclick="add3Guest()">+3</button>
+                </div>
+                <p>Team Fouls</p>
+                <div class="foulBox">
+                    <div class="foulText" id="guestFouls"></div>
+                </div>
+                <button class="foulBtn" id="addGuestFoul" onclick="addGuestFoul()">Add Foul</button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
