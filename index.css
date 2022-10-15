@@ -5,11 +5,11 @@
 
 body {
     margin: 0;
+    background: #023047;
 }
 
 .container {
     color: white;
-    background: #023047;
     display: flex;
     justify-content: space-around;
     border: 0 solid black;
